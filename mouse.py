@@ -31,7 +31,7 @@ class Main:
         key = self.listener.canonical(key)
         if key == keyboard.Key.ctrl:
             self.holdingCtrl = False
-            recog(self.mouse_coords)
+            recog(self.mouse_coords.copy())
             self.mouseListener.stop()
 
 Main()
