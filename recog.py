@@ -4,12 +4,7 @@ from multiprocessing import Process
 import time
 
 r = dN.recognizer()
-#By default, a recognizer gives a positive result when gestures have
-#the same number of strokes only. This can be turned off:
-#r.set_same_nb_strokes(False)
-
-#Rotation invariance can also be turned off:
-#r.set_rotation_invariance(False)
+r.set_rotation_invariance(False)
 
 def register_gesture(name, paths, reverse=True):
     if reverse:
