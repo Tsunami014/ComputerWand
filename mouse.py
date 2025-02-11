@@ -13,7 +13,7 @@ class Main:
             listener.join()
     
     def mouse_move(self, x, y):
-        self.mouse_coords.append((x, y))
+        self.mouse_coords.append((x, -y))
     
     def kbd_press(self, key):
         if self.listener.canonical(key) == keyboard.Key.ctrl:
